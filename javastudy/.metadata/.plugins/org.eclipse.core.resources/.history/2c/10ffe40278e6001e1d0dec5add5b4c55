@@ -1,0 +1,18 @@
+package chap04;
+/*
+ * 컴퓨터에서 임의의 수를 선택하여 상품 출력하기
+ */
+public class SwitchEx2 {
+
+	public static void main(String[] args) {
+		int num = (int)(Math.random() * 10) + 1;
+		System.out.println(num + ":");
+		switch(num) {
+		case 1 : System.out.println("자전거 당첨");break;
+		case 2 : System.out.println("USB 당첨");break;
+		case 3 : System.out.println("마우스 당첨");break;
+		default : System.out.println("다음 기회에.");break;
+		}
+	}
+
+}

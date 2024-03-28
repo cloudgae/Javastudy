@@ -1,0 +1,18 @@
+package chap04;
+
+import java.util.Scanner;
+
+/*
+ * 화면에서 문자를 입력받아서 대문자/소문자/숫자/기타문자인지 출력
+ */
+public class Exam2 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("문자를 입력하세요");
+		char ch = scan.next().charAt(0);
+		System.out.println(ch);
+
+	}
+
+}

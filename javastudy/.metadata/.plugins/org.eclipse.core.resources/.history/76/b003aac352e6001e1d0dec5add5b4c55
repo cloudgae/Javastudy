@@ -1,0 +1,31 @@
+package chap3;
+/*
+ * 대입연산자 : =, +=, -=, *=, /=
+ * lvalue(좌측변수) = rvalue(우측값 : 변수, 값, 수식)
+ * x+y=100 => 오류(X)
+ * x=100-y => 정상(O)
+ */
+public class OpEx6 {
+
+	public static void main(String[] args) {
+		int num = 200;
+		System.out.println(num);
+		num += 10;
+		System.out.println(num);
+		num += 10;
+		System.out.println(num);
+		num -= 10;
+		System.out.println(num);
+		num *= 2;
+		System.out.println(num);
+		num /= 10;
+		System.out.println(num);
+		num %= 3;
+		System.out.println(num);
+		num += 10+5;
+		System.out.println(num);
+		num *= 2*3;
+		System.out.println(num);
+	}
+
+}

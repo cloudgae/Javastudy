@@ -1,0 +1,19 @@
+package chap04;
+/*
+ * 1~100까지의 짝수의 합 출력
+ * for
+ * while
+ * do while
+ */
+public class Exam4 {
+
+	public static void main(String[] args) {
+		int sum = 0;
+		System.out.println("for구문으로 출력");
+		for(int i = 0; i <= 100; i+=2) {
+			sum += i;
+		}
+
+	}
+
+}
