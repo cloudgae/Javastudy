@@ -1,0 +1,37 @@
+package test0321;
+
+import java.util.Scanner;
+
+/*
+ * [결과]
+삼각형의 높이를 입력하세요
+3
+		9			
+	8	7	6		
+5	4	3	2	1	
+ 
+*/
+public class Test4 {
+
+	public static void main(String[] args) {
+		System.out.println("삼각형의 높이를 입력하세요");
+		Scanner scan = new Scanner(System.in);
+		int h = scan.nextInt();
+		//가장 큰 숫자
+		int n = h*h;
+		//밑바닥 2*h-1
+		int b = 2*h-1;
+		//각 줄에서 숫자의 위치 
+		int m = (2*h-1)/2;
+		
+		for(int i=0;i<h;i++) {
+			for(int j=0;j<b;j++) {
+				for(int k=n;k>0;k--) {
+					if(m-i<j && j<m+i) System.out.print("\t");
+					else System.out.println(k);
+				}
+			}
+		}
+	}
+
+}

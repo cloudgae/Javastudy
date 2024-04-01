@@ -1,0 +1,73 @@
+package chap04;
+/*
+ * 1~100까지의 짝수의 합 출력
+ * for
+ * while
+ * do while
+ */
+public class Exam4 {
+
+	public static void main(String[] args) {
+		//for1
+		int sum = 0;
+		System.out.println("for구문으로 출력");
+		for(int i = 0; i <= 100; i += 2) {
+			sum += i;
+		}
+		System.out.println("합계:" + sum);
+		
+		//for2
+		sum = 0;
+		System.out.println("for구문으로 출력2");
+		for(int i = 1; i <= 100; i++) {
+			if(i%2 == 0) {
+				sum += i;
+			}
+		}
+		System.out.println("합계:" + sum);
+		
+		//while1
+		sum = 0;
+		int i = 0;
+		System.out.println("while구문으로 출력");
+		while(i <= 100) {
+			sum += i;
+			i += 2;
+		}
+		System.out.println("합계:" + sum);
+		
+		//while2
+		sum = 0;
+		i = 0;
+		System.out.println("while구문으로 출력2");
+		while(i <= 100) {
+			if(i%2 == 0) {
+				sum += i;
+			}
+		}
+		System.out.println("합계:" + sum);
+		
+		//do while1
+		sum = 0;
+		i = 0;
+		System.out.println("do while구문으로 출력");
+		do {
+			sum += i;
+			i += 2;
+		}while(i <= 100);
+		System.out.println("합계:" + sum);
+		
+//		//do while2
+//		sum = 0;
+//		i = 1;
+//		System.out.println("do while구문으로 출력2");
+//		do {
+//			if(i  % 2 == 0) {
+//			sum += i;
+//			i++;
+//			}
+//		}while(i <= 100);
+//		System.out.println("합계:" + sum);
+	}
+
+}

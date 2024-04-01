@@ -1,0 +1,38 @@
+package test0321;
+
+import java.util.Scanner;
+
+/*
+삼각형의 높이를 입력하세요             h=3=i b=5=j   m=2
+3          위치                 i      j(별의갯수)
+*****      01234  2-2~2+2    h=3    b=5
+ ***       123    2-1~2+1      2   4->3
+  *        2      2-0~2+0      1   3->1
+ 
+ */
+public class Test5 {
+
+	public static void main(String[] args) {
+		System.out.println("삼각형의 높이를 입력하세요");
+		Scanner scan = new Scanner(System.in);
+		int h = scan.nextInt();
+		//밑바닥 2*h-1
+		int b = 2*h-1;
+		//각 줄에서 숫자의 위치 
+		int m = b/2;
+		
+		for(int i=h; i>0;i--) {  //i=h
+			for(int j=b; j>0; j--) { //j=5,4,3,2,1 //밑바닥만큼 앞뒤 공백으로 채움
+				if(m-i < j && j <=m+i) {
+					System.out.print("*");
+				}
+				else{
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+
+	}
+
+}
