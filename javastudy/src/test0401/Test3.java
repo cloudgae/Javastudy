@@ -18,6 +18,11 @@ public class Test3 {
 	}
 	public static void main(String[] args) {
 		Beta b = getIt();
+		//Beta타입의 참조변수로 참조 불가
+//		System.out.println(b.testIt());
+		//ClassCastException
+		//getIt()메서드가 Gamma()리턴하도록 수정해야함
+//		System.out.println(((Gamma)b).testIt());
 		System.out.println(((Alpha)b).testIt());
 	}
 }

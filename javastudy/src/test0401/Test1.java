@@ -27,9 +27,8 @@ abstract class Animal {
 		this.type = type;
 		this.leg = leg;
 	}
-
+	//추상메서드
 	abstract void eat();
-
 	abstract void sound();
 }
 
@@ -61,7 +60,7 @@ class Lion extends Animal{
 	}
 }
 interface Flyable{
-	void fly();
+	void fly();//인터페이스는 추상메서드 예약어 abstract생략 가능
 }
 class Eagle extends Animal implements Flyable{
 	Eagle(){
@@ -90,7 +89,7 @@ public class Test1 {
 			System.out.print(a.type + ",다리수:" + a.leg + "개 =>");
 			a.sound();
 			a.eat();
-			if (a instanceof Flyable) {
+			if (a instanceof Flyable) {//a객체는 Flyable인터페이스를 구현한 구현 객체
 				((Flyable) a).fly();
 			}
 		}
